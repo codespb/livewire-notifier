@@ -1,0 +1,56 @@
+{
+    "name": "pestphp/pest-plugin-init",
+    "description": "The Pest Init plugin",
+    "keywords": [
+        "php",
+        "framework",
+        "pest",
+        "unit",
+        "test",
+        "testing",
+        "plugin",
+        "init"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "pestphp/pest-plugin": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pest\\Init\\": "src/"
+        }
+    },
+    "conflict": {
+        "pestphp/pest": "<1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0",
+        "pestphp/pest-dev-tools": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "pest": {
+            "plugins": [
+                "Pest\\Init\\Plugin"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "php-cs-fixer fix -v",
+        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "test:types": "phpstan analyse --ansi",
+        "test": [
+            "@test:lint",
+            "@test:types"
+        ]
+    }
+}
