@@ -154,7 +154,7 @@ return [
 
 ## Troubleshooting
 
-Your messages doesn't get any styles? Please, run `livewire-notifier:install` command to publish views. Therefore Laravel Mix compiler will find package Blade-views and will purge CSS properly.
+Your messages don't get any styles? Please, run `livewire-notifier:install` command to publish views. Therefore Laravel Mix compiler will find package Blade-views and will purge CSS properly.
 
 ## Updating
 
