@@ -5,7 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci] -->
 
-Livewire Notifier is a simple notifications system with zero dependencies above [https://tallstack.dev/](TALL-stack) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
+Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
 
 ## Installation
 
