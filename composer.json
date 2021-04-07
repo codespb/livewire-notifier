@@ -2,6 +2,7 @@
     "name": "codespb/livewire-notifier",
     "description": "Simple Livewire notifications system without any dependencies except Tailwind CSS",
     "license": "MIT",
+    "version": "0.1",
     "authors": [
         {
             "name": "Dmitriy Belyaev",

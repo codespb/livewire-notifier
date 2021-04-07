@@ -41,7 +41,7 @@ $message = [
         'title' => '', // Optional
         'type' => 'success', // Optional. By default: success | optional: error (or fail), warning (or warn), info
         // you can find all types options in the config file
-        'icon' => '', // Optional. Being given it replace default type icon. Can be pure html or svg code
+        'icon' => '', // Optional. It replaces the default type icon. Can be pure html or svg code
 
         // Attention! The following options override ones from the config file
 
@@ -172,7 +172,7 @@ If you discover any security related issues, please email author email instead o
 
 ## Credits
 
-- [Dmitriy Belyaev][https://codespb.com]
+- [Dmitriy Belyaev](https://codespb.com)
 
 ## License
 
