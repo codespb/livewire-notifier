@@ -5,6 +5,34 @@
 
 Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
 
+![Laravel Notifier](https://raw.github.com/codespb/laravel-notifier/master/screenshots/livewire-notifier.jpg)
+
+![Laravel Notifier Basic](https://raw.github.com/codespb/laravel-notifier/master/screenshots/livewire-notifier-basic.jpg)
+
+## Requirements
+
+Make sure that [Livewire](https://laravel-livewire.com/) and [Alpine.JS](https://github.com/alpinejs/alpine) are installed properly.
+The easiest way to do it is to install [Laravel Jetstream](https://jetstream.laravel.com) with **Livewire stack** (post-install command `php artisan jetstream:install livewire`).
+
+**Alpine.JS** must be imported in `resources/js/app.js` package:
+```javascript
+import 'alpinejs'
+```
+**Livewire** scripts and styles tags must be present in the layout file:
+```html
+…
+<head>
+…
+    <livewire:styles/>
+…
+</head>
+<body>
+…
+    <livewire:scripts/>
+</body>
+</html>
+```
+
 ## Installation
 
 Via Composer
@@ -19,7 +47,11 @@ Proceed with installation process:
 $ php artisan livewire-notifier:install
 ```
 
-Afterwards the package config can be found at `config/livewire-notifier.php` and views – at `resources/views/vendor/livewire-notifier/`.
+Afterwards the package config can be found at `config/livewire-notifier.php` and views at `resources/views/vendor/livewire-notifier/`.
+
+It's required because of Tailwind config is needed to be extended with new purge paths.
+
+Otherwise you won't see messages styled properly.
 
 ## Usage
 
@@ -183,14 +215,3 @@ If you discover any security related issues, please email author email instead o
 ## License
 
 Please see the [license file](license.md) for more information.
-
-<!-- [ico-version]: https://img.shields.io/packagist/v/codespb/laravel-livewire-notifier.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/codespb/laravel-livewire-notifier.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/codespb/laravel-livewire-notifier/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
-[link-packagist]: https://packagist.org/packages/codespb/laravel-livewire-notifier
-[link-downloads]: https://packagist.org/packages/codespb/laravel-livewire-notifier
-[link-travis]: https://travis-ci.org/codespb/laravel-livewire-notifier
-[link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/codespb
-[link-contributors]: ../../contributors -->

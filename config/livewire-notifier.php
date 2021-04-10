@@ -2,7 +2,7 @@
 return [
     'positionClass' => 'absolute top-0 right-0',
     'defaultMsgClass' => 'w-80  rounded-xl shadow-xl',
-    'duration' => 2200,
+    'duration' => 5000,
     'types' => [
         'success' => [
             // 'msgClass'=>'bg-green-200',
