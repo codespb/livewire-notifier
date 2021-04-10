@@ -35,7 +35,9 @@ class Notifier extends Component
         $this->messages = collect($this->messages);
         $this->message && $this->addMsg($this->message);
         $this->reset('message');
-        $msg = session()->flash('notifier') && $this->addMsg($msg);
+        if ($msg = session('notifier')) {
+            $this->addMsg($msg);
+        }
         $this->duration = $this->duration ?? config('livewire-notifier.duration');
     }
     /**
@@ -56,10 +58,8 @@ class Notifier extends Component
             'title' => '',
             'icon' => '',
             'type' => 'success',
-            // 'msgClass' => config('livewire-notifier.types.' . ($message['type'] ?? 'default') . '.msgClass',config('livewire-notifier.types.default.msgClass')) ,
-            // 'progressClass' =>  config('livewire-notifier.types.' . ($message['type'] ?? 'default') . '.progressClass',config('livewire-notifier.types.default.progressClass')),
         ], $message);
-        $this->messages->push($message);    
+        $this->messages->push($message);
     }
 
     public function render()

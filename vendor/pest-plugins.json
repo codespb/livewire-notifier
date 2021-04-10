@@ -1,5 +1,0 @@
-[
-    "Pest\\Plugins\\Version",
-    "Pest\\PluginCoverage\\Plugin",
-    "Pest\\Init\\Plugin"
-]

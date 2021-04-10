@@ -27,7 +27,6 @@ class LivewireNotifierInstall extends Command
      */
     public function handle()
     {
-        // $this->getOutput()->title('Livewire Notifier package');
         $this->table(['Livewire Notifier'], [
             ['Simple notifications system with zero dependencies above TALL-stack.'],
             ["\nVisit site:\nhttps://github.com/codespb/livewire-notifier"]

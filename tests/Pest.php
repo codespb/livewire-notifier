@@ -10,10 +10,7 @@
 | need to change it using the "uses()" function to bind a different classes or traits.
 |
 */
-//namespace Codemotion\LaravelLivewireNotifier;
-
-// uses(Tests\NotifierTestCase::class);
-
+uses(CodeSPB\LivewireNotifier\Tests\TestCase::class)->in(__DIR__);
 /*
 |--------------------------------------------------------------------------
 | Expectations
@@ -40,4 +37,7 @@
 |
 */
 
-
+// function something()
+// {
+//     // ..
+// }
