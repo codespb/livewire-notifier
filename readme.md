@@ -78,9 +78,9 @@ $message = [
         // Attention! The following options override ones from the config file
 
         'duration' => 5000, // Optional. The time of message to be shown. To show infinitely set to 0
-        'msgClass' =>  $this->msgClass, // Optional. Tailwind class for message container
-        'progressClass' =>  $this->progressClass, // Optional. Tailwind class for progress bar. If null progress bar won't be shown
-        'closable' => $this->closable, // Optional. True by default. Whether message is closable by click on message or Esc key press on window
+        'msgClass' =>  'bg-gradient-to-r from-green-200 to-green-300', // Optional. Tailwind class for message container
+        'progressClass' =>  'bg-green-500', // Optional. Tailwind class for progress bar. If null progress bar won't be shown
+        'closable' => false, // Optional. True by default. Whether message is closable by click on message or Esc key press on window
     ]
 ```
 ``` javascript
