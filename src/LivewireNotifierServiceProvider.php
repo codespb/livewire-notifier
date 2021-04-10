@@ -3,7 +3,7 @@
 namespace CodeSPB\LivewireNotifier;
 
 use Livewire\Livewire;
-use Illuminate\Support\Facades\Blade;
+// use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use CodeSPB\LivewireNotifier\Http\Livewire\Notifier;
 use CodeSPB\LivewireNotifier\Http\Livewire\NotifierMessage;
@@ -43,15 +43,15 @@ class LivewireNotifierServiceProvider extends ServiceProvider
         // });
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return ['livewire-notifier'];
-    }
+    // /**
+    //  * Get the services provided by the provider.
+    //  *
+    //  * @return array
+    //  */
+    // public function provides()
+    // {
+    //     return ['livewire-notifier'];
+    // }
 
     /**
      * Console-specific booting.
