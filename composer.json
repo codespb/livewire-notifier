@@ -1,13 +1,13 @@
 {
     "name": "codespb/livewire-notifier",
-    "description": "    ",
+    "description": "Simple Livewire notifications system without any dependencies except TALL-stack.",
     "license": "MIT",
-    "version": "0.1",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Dmitriy Belyaev",
-            "email": "cuamckuy@gmail.com",
-            "homepage": "https://cogear.ru"
+            "email": "db@codespb.com",
+            "homepage": "https://codespb.com"
         }
     ],
     "homepage": "https://github.com/codespb/livewire-notifier",
