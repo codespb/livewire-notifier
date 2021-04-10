@@ -1,13 +1,12 @@
 # Livewire - Notifier
 
-[![Latest Stable Version](https://poser.pugx.org/codespb/livewire-notifier/v)](//packagist.org/packages/phpunit/phpunit) [![run-tests](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml) [![Total Downloads](https://poser.pugx.org/codespb/livewire-notifier/downloads)](//packagist.org/packages/phpunit/phpunit) [![License](https://poser.pugx.org/codespb/livewire-notifier/license)](//packagist.org/packages/phpunit/phpunit)
+[![Latest Stable Version](https://poser.pugx.org/codespb/livewire-notifier/v)](//packagist.org/packages/codespb/livewire-notifier) [![run-tests](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml) [![Total Downloads](https://poser.pugx.org/codespb/livewire-notifier/downloads)](//packagist.org/packages/phpunit/phpunit) [![License](https://poser.pugx.org/codespb/livewire-notifier/license)](//packagist.org/packages/phpunit/phpunit)
 
 
 Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
-
-![Laravel Notifier](https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier.jpg?raw=true)
-
-![Laravel Notifier Basic](https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier-basic.jpg?raw=true)
+<p align="center">
+    <img src="https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier.jpg?raw=true" alt="Livewire Notifier">
+</p>
 
 ## Requirements
 
@@ -32,7 +31,6 @@ import 'alpinejs'
 </body>
 </html>
 ```
-
 ## Installation
 
 Via Composer
@@ -52,6 +50,10 @@ Afterwards the package config can be found at `config/livewire-notifier.php` and
 It's required because of Tailwind config is needed to be extended with new purge paths.
 
 Otherwise you won't see messages styled properly.
+
+<p align="center">
+    <img src="https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier-basic.jpg?raw=true" alt="Livewire Notifier">
+</p>
 
 ## Usage
 
@@ -113,6 +115,18 @@ public function save(){
 Add new message from javascript:
 ``` javascript
 Livewire.emitTo('notifier','message',{text:'The post is saved!'})
+```
+
+### Example
+Try to put the following code (with Laravel Jetstream w/Livewire stack installed):
+```html
+<div class="flex flex-row space-x-4">
+    <x-jet-button x-data="{}" @click="Livewire.emitTo('notifier','message',{text:'Success',type:'success'})">Success</x-jet-button>
+    <x-jet-button x-data="{}" @click="Livewire.emitTo('notifier','message',{text:'Error',type:'error'})">Error</x-jet-button>
+    <x-jet-button x-data="{}" @click="Livewire.emitTo('notifier','message',{text:'Warning',type:'warning'})">Warning</x-jet-button>
+    <x-jet-button x-data="{}" @click="Livewire.emitTo('notifier','message',{text:'Info',type:'info'})">Info</x-jet-button>
+    <x-jet-button x-data="{}" @click="Livewire.emitTo('notifier','message',{text:'Default',type:'default'})">Default</x-jet-button>
+</div>
 ```
 
 ## Config file
