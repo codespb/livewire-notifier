@@ -1,9 +1,9 @@
 # Livewire - Notifier
 
-<!-- [![Latest Version on Packagist][ico-version]][link-packagist]
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![run-tests](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml)
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci] -->
+
 
 Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
 
@@ -25,7 +25,7 @@ Afterwards the package config can be found at `config/livewire-notifier.php` and
 
 ## Usage
 
-Put Livewire-component `<livewire:messages/>` into the app layout.
+Put Livewire-component `<livewire:notifier/>` into the app layout.
 Make sure to insert it into correct context because it may be positioned absolutely.
 
 Now you can use it from frontend and backend both.
