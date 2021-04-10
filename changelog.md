@@ -7,9 +7,9 @@ All notable changes to `LaravelLivewireNotifier` will be documented in this file
 - Screenshots for README
 - Changelog
 ### Changed
-- README. Add requirements and installation intructions.
+- README. Add requirements and installation instructions.
 ### Removed
-– `src/Facades` boilerplate code.
+- Delete unused boilerplate code.
 
 ## 1.0.1 2021-10-04
 ### Added
