@@ -5,9 +5,9 @@
 
 Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
 
-![Laravel Notifier](https://raw.github.com/codespb/laravel-notifier/master/screenshots/livewire-notifier.jpg)
+![Laravel Notifier](https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier.jpg?raw=true)
 
-![Laravel Notifier Basic](https://raw.github.com/codespb/laravel-notifier/master/screenshots/livewire-notifier-basic.jpg)
+![Laravel Notifier Basic](https://github.com/codespb/livewire-notifier/blob/main/screenshots/livewire-notifier-basic.jpg?raw=true)
 
 ## Requirements
 
