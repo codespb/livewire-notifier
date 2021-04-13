@@ -43,7 +43,7 @@ class LivewireNotifierInstall extends Command
         } else {
             $tailwind_config = file_get_contents($tailwind_config_path);
             if (!strpos($tailwind_config, 'livewire-notifier')) {
-                $tailwind_config = preg_replace("#purge:\s*\[\n(.+)\]#imsU", "purge: [\n        \"./config/livewire-notifier.php\"\n,\"./resources/views/vendor/livewire-notifier/**/*.blade.php\",\n$1]", $tailwind_config);
+                $tailwind_config = preg_replace("#purge:\s*\[\n(.+)\]#imsU", "purge: [\n        \"./config/livewire-notifier.php\",\n$1]", $tailwind_config);
                 file_put_contents($tailwind_config_path, $tailwind_config);
             }
         }

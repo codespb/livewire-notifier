@@ -1,6 +1,6 @@
 # Livewire - Notifier
 
-[![Latest Stable Version](https://poser.pugx.org/codespb/livewire-notifier/v)](//packagist.org/packages/codespb/livewire-notifier) [![run-tests](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml) [![Total Downloads](https://poser.pugx.org/codespb/livewire-notifier/downloads)](//packagist.org/packages/phpunit/phpunit) [![License](https://poser.pugx.org/codespb/livewire-notifier/license)](//packagist.org/packages/phpunit/phpunit)
+[![Latest Stable Version](https://poser.pugx.org/codespb/livewire-notifier/v)](//packagist.org/packages/codespb/livewire-notifier) [![run-tests](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codespb/livewire-notifier/actions/workflows/run-tests.yml) [![Total Downloads](https://poser.pugx.org/codespb/livewire-notifier/downloads)](//packagist.org/packages/codespb/livewire-notifier) [![License](https://poser.pugx.org/codespb/livewire-notifier/license)](//packagist.org/packages/phpunit/phpunit)
 
 
 Livewire Notifier is a simple notifications system with zero dependencies above [TALL-stack](https://tallstack.dev/) (Tailwind CSS, Alpine.JS, Laravel and Livewire).
