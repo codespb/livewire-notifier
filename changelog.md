@@ -2,6 +2,10 @@
 
 All notable changes to `LaravelLivewireNotifier` will be documented in this file.
 
+## 1.0.3 2021-13-04
+- **Changed** Readme update.
+- **Changed** Update installation command.
+
 ## 1.0.2 2021-10-04
 ### Added
 - Screenshots for README
